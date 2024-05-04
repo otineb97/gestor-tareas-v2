@@ -1,6 +1,6 @@
 # Gestor de Tareas
 
-Gestor de tareas desarrollado con HTML, CSS y JavaScript, con la ayuda del framework Bootstrap 5. Permite a los usuarios agregar, editar y eliminar tareas, así como marcarlas como completadas.
+Gestor de tareas desarrollado con HTML, CSS y JavaScript. Permite a los usuarios agregar, editar y eliminar tareas, así como marcarlas como completadas.
 
 ## Características
 

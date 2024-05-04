@@ -1,0 +1,8 @@
+/* Custom styles */
+body {
+    background-color: #f8f9fa;
+}
+
+.card-title {
+    font-size: 1rem; /* Font size for title */
+}

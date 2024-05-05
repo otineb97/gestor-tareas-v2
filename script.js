@@ -9,9 +9,15 @@ function addTask(task, description, dueDate) {
           <h5 class="card-title">${task}</h5>
           <p class="card-text">${description}</p>
           <p class="card-text"><small class="text-body-secondary">Fecha de Vencimiento: ${dueDate}</small></p>
-          <button type="button" class="btn btn-success btn-sm mr-2" onclick="completeTask(this)">Completar</button>
-          <button type="button" class="btn btn-primary btn-sm mr-2" onclick="editTask(this)">Editar</button>
-          <button type="button" class="btn btn-danger btn-sm" onclick="deleteTask(this)">Eliminar</button>
+          <button type="button" class="btn btn-success btn-sm mr-2" onclick="completeTask(this)">
+            <i class="bi bi-check-lg"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-sm mr-2" onclick="editTask(this)">
+            <i class="bi bi-pencil-square"></i>
+          </button>
+          <button type="button" class="btn btn-danger btn-sm" onclick="deleteTask(this)">
+            <i class="bi bi-trash"></i>
+          </button>
         </div>
       </div>
     `;
@@ -22,9 +28,11 @@ function addTask(task, description, dueDate) {
 function completeTask(button) {
   const taskItem = button.parentElement.parentElement;
   const taskTextElement = taskItem.querySelector("h5");
-  taskTextElement.classList.toggle("completed");
+  taskTextElement.classList.toggle("text-decoration-line-through");
+  const descriptionElement = taskItem.querySelector(".card-text");
+  descriptionElement.classList.toggle("text-decoration-line-through");
   const editButton = taskItem.querySelector(".btn-primary");
-  if (taskTextElement.classList.contains("completed")) {
+  if (taskTextElement.classList.contains("text-decoration-line-through")) {
     editButton.setAttribute("disabled", "disabled");
   } else {
     editButton.removeAttribute("disabled");
@@ -77,6 +85,16 @@ document.getElementById("task-form").addEventListener("submit", function (e) {
   const task = taskInput.value;
   const description = descriptionInput.value;
   const dueDate = dueDateInput.value;
+
+  // Get the current date in UTC format
+  const currentDate = new Date().toISOString().split('T')[0];
+
+  // Validate if the expiration date is before the current date
+  if (dueDate < currentDate) {
+    alert("La fecha de vencimiento debe ser igual o posterior a la fecha actual.");
+    return;
+  }
+
   if (task.trim() === "") {
     alert("Por favor, introduce una tarea");
   } else {

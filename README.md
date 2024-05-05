@@ -2,6 +2,8 @@
 
 Gestor de tareas desarrollado con HTML, CSS y JavaScript. Permite a los usuarios agregar, editar y eliminar tareas, así como marcarlas como completadas.
 
+[Haz clic aquí para probarlo tú mismo](https://otineb97.github.io/gestor-tareas-v2/)
+
 ## Características
 
 - **Agregar Tareas**: Los usuarios pueden agregar nuevas tareas especificando un título, descripción y fecha de vencimiento.

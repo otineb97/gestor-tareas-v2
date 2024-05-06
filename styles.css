@@ -3,6 +3,6 @@ body {
     background-color: #f8f9fa;
 }
 
-.card-title {
+.card-title, .footer {
     font-size: 1rem; /* Font size for title */
 }

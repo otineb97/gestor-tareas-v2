@@ -22,6 +22,9 @@ function addTask(task, description, dueDate) {
       </div>
     `;
   taskList.appendChild(li);
+
+  taskList.style.display = "block";
+
 }
 
 // Function to complete a task
@@ -60,6 +63,10 @@ function deleteTask(button) {
   const taskItem = button.parentElement.parentElement;
   taskItem.remove();
   adjustListHeight();
+
+  if (document.querySelectorAll("#task-list li").length === 0) {
+    document.getElementById("task-list").style.display = "none";
+  }
 }
 
 // List size adjustment function

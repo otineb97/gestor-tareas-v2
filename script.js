@@ -22,9 +22,7 @@ function addTask(task, description, dueDate) {
       </div>
     `;
   taskList.appendChild(li);
-
   taskList.style.display = "block";
-
 }
 
 // Function to complete a task

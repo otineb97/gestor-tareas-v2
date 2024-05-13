@@ -1,8 +1,8 @@
 /* Custom styles */
 body {
-    background-color: #f8f9fa;
+    background-color: #2b3035;
 }
 
-.card-title, .footer {
-    font-size: 1rem; /* Font size for title */
+.custom-rounded {
+    border-radius: 0.25rem;
 }

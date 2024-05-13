@@ -2,13 +2,14 @@
 function addTask(task, description, dueDate) {
   const taskList = document.getElementById("task-list");
   const li = document.createElement("li");
-  li.className = "list-group-item";
+  li.className = "list-group-item bg-transparent border border-0 rounded";
   li.innerHTML = `
+      <hr class="border border-light custom-rounded opacity-50">
       <div class="d-flex justify-content-between align-items-center my-2">
-        <div>
-          <h5 class="card-title">${task}</h5>
-          <p class="card-text">${description}</p>
-          <p class="card-text"><small class="text-body-secondary">Fecha de Vencimiento: ${dueDate}</small></p>
+        <div">
+          <h5 class="card-title text-white">${task}</h5>
+          <p class="card-text text-light">${description}</p>
+          <p class="card-text"><small class="text-white">Fecha de Vencimiento: ${dueDate}</small></p>
           <button type="button" class="btn btn-success btn-sm mr-2" onclick="completeTask(this)">
             <i class="bi bi-check-lg"></i>
           </button>

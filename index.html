@@ -14,27 +14,27 @@
 </head>
 <body>
     <main>
-        <div class="container my-5">
+        <div class="container my-4">
             <div class="row">
-                <div class="col-md-6 mx-auto">
-                    <section class="card">
+                <div class="col-md-4 mx-auto">
+                    <section class="card border bg-transparent border-0">
                         <div class="card-body">
                             <form id="task-form">
-                                <h2 class="card-title text-center">Gestor de Tareas</h2>
-                                <div class="mb-3">
-                                    <label for="task" class="form-label">Título</label>
-                                    <input type="text" class="form-control" id="task" maxlength="50">
+                                <h5 class="card-title text-light text-center">Gestor de Tareas</h5>
+                                <div class="mt-4">
+                                    <label for="task" class="form-label visually-hidden">Título</label>
+                                    <input type="text" class="form-control" id="task" maxlength="50" placeholder="Nombre de la tarea">
                                 </div>
-                                <div class="mb-3">
-                                    <label for="description" class="form-label">Descripción</label>
-                                    <textarea class="form-control" id="description" rows="3" maxlength="200"></textarea>
+                                <div class="mt-4">
+                                    <label for="description" class="form-label visually-hidden">Descripción</label>
+                                    <textarea class="form-control" id="description" rows="3" maxlength="200" placeholder="Descripción (opcional)"></textarea>
                                 </div>
-                                <div class="mb-4">
-                                    <label for="due-date" class="form-label">Fecha de Vencimiento</label>
+                                <div class="my-4">
+                                    <label for="due-date" class="form-label text-light visually-hidden">Fecha de Vencimiento</label>
                                     <input type="date" class="form-control" id="due-date">
                                 </div>
-                                <div class="d-grid mb-2">
-                                    <button class="btn btn-primary fw-semibold btn-block" type="submit">Guardar</button>
+                                <div class="d-grid">
+                                    <button class="btn btn-primary fw-semibold btn-block" type="submit">Agendar Tarea</button>
                                 </div>
                             </form>
                         </div>

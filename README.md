@@ -4,6 +4,11 @@ Gestor de tareas desarrollado con HTML, CSS y JavaScript. Permite a los usuarios
 
 [Haz clic aquí y pruébalo por ti mismo.](https://otineb97.github.io/gestor-tareas-v2/)
 
+## Capturas de Pantalla
+
+![Gestor de Tareas Captura](captures/capture-one.png)
+_Interfaz principal_
+
 ## Características
 
 - **Agregar Tareas**: Los usuarios pueden agregar nuevas tareas especificando un título, descripción y fecha de vencimiento.

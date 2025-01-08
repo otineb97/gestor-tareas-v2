@@ -18,7 +18,7 @@ Gestor de tareas desarrollado con HTML, CSS y JavaScript. Permite a los usuarios
 2. Abre el archivo `index.html` en tu navegador web.
 3. Utiliza el formulario proporcionado para agregar nuevas tareas.
 4. Para editar o eliminar una tarea existente, haz clic en los botones correspondientes junto a la tarea.
-5. Marca una tarea como completada haciendo clic en el botón "Completar".
+5. Marca una tarea como completada.
 
 ## Licencia
 
